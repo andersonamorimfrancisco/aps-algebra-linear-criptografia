@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>APS Algebra Linear</title>
+  </head>
+  <body>
+    <h1>APS - Algebra Linear</h1>
+
+    <div id="divCriptografar">
+      <div class="tabela">
+        <h3>Palavra</h3>
+        <input
+          type="text"
+          name="entradaPalavra"
+          id="entradaPalavra"
+          maxlength="6"
+        /><br />
+        <button type="submit" id="botaoPalavra">Criptografar</button>
+      </div>
+      <div id="cript-resultado"></div>
+    </div>
+    <div id="divDescriptografar">
+      <div class="tabela">
+        <h3>Matriz Criptografada</h3>
+        <div class="linha">
+          <input type="text" name="numero0" id="numero0" class="campoNumero" />
+          <input type="text" name="numero1" id="numero1" class="campoNumero" />
+        </div>
+        <div class="linha">
+          <input type="text" name="numero2" id="numero2" class="campoNumero" />
+          <input type="text" name="numero3" id="numero3" class="campoNumero" />
+        </div>
+        <div class="linha">
+          <input type="text" name="numero4" id="numero4" class="campoNumero" />
+          <input type="text" name="numero5" id="numero5" class="campoNumero" />
+        </div>
+        <button type="submit" id="botaoDescriptografar">Descriptografar</button>
+      </div>
+      <div id="desc-resultado"></div>
+    </div>
+    <div id="informacoes">
+      <div>
+        <h3>Matriz de Criptografia</h3>
+        <div class="linha">
+          <div class="item">1</div>
+          <div class="item">0</div>
+          <div class="item">1</div>
+        </div>
+        <div class="linha">
+          <div class="item">1</div>
+          <div class="item">1</div>
+          <div class="item">1</div>
+        </div>
+        <div class="linha">
+          <div class="item">0</div>
+          <div class="item">2</div>
+          <div class="item">-1</div>
+        </div>
+      </div>
+      <div>
+        <h3>Tabela de Conversão</h3>
+        <table id="tabelaConversao">
+          <tr>
+            <td>A = 1</td>
+            <td>H = 8</td>
+            <td>O = 15</td>
+            <td>V = 22</td>
+          </tr>
+          <tr>
+            <td>B = 2</td>
+            <td>I = 9</td>
+            <td>P = 16</td>
+            <td>W = 23</td>
+          </tr>
+          <tr>
+            <td>C = 3</td>
+            <td>J = 10</td>
+            <td>Q = 17</td>
+            <td>X = 24</td>
+          </tr>
+          <tr>
+            <td>D = 4</td>
+            <td>K = 11</td>
+            <td>R = 18</td>
+            <td>Y = 25</td>
+          </tr>
+          <tr>
+            <td>E = 5</td>
+            <td>L = 12</td>
+            <td>S = 19</td>
+            <td>Z = 26</td>
+          </tr>
+          <tr>
+            <td>F = 6</td>
+            <td>M = 13</td>
+            <td>T = 20</td>
+            <td>* = 0</td>
+          </tr>
+          <tr>
+            <td>G = 7</td>
+            <td>N = 14</td>
+            <td>U = 21</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+          <h3>Algoritmo</h3>
+          <p>
+            <b>Criptografar</b>: <ul><li>Transformar palavra informada em matriz 3x2.
+                </li><li>
+                Converter matriz de letras para matriz de números conforme tabela de
+                conversão.
+              </li><li>
+                Multiplicar matriz de números por matriz de criptografia.</li></ul>
+          <p>
+            <b>Descriptografar</b>: <ul><li>Multiplicar matriz informada pela matriz inversa da matriz de criptografia.
+                </li><li>
+                Converter matriz codifidada em matriz de letras.
+              </li><li>
+                Transformar matriz de letras para palavra.</li></ul>
+          </p>
+      </div>
+    </div>
+
+    <script src="src/js.js"></script>
+  </body>
+</html>
